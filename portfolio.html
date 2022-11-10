@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link href="./css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-flex">
+        <a href="./index.html" class="logo link" lang="en" title="Cтудія">
+          <span class="logo-web">Web</span><span>Studio</span>
+        </a>
+        <nav>
+          <ul class="sitenav list">
+            <li class="item"><a href="./index.html" class="link">Студія</a></li>
+            <li class="item">
+              <a href="./portfolio.html" class="current link">Портфоліо</a>
+            </li>
+            <li class="item"><a href="#cont" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+
+        <ul class="contacts list">
+          <li class="item">
+            <a href="mailto:info@devstudio.com" class="header-cont link">
+              <svg class="icon-envelope" width="16" height="12">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="item">
+            <a href="tel:+380961111111" class="header-cont link">
+              <svg class="icon-smartphone" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="section filters">
+        <div class="container">
+          <h1 class="section-title hide">Портфоліо</h1>
+          <ul class="filter list">
+            <li class="item">
+              <button class="portfolio-button btn" type="button">Усі</button>
+            </li>
+            <li class="item">
+              <button class="portfolio-button btn" type="button">
+                Веб-сайти
+              </button>
+            </li>
+            <li class="item">
+              <button class="portfolio-button btn" type="button">
+                Додатки
+              </button>
+            </li>
+            <li class="item">
+              <button class="portfolio-button btn" type="button">Дизайн</button>
+            </li>
+            <li class="item">
+              <button class="portfolio-button btn" type="button">
+                Маркетинг
+              </button>
+            </li>
+          </ul>
+          <ul class="portfolio list">
+            <li class="portfolio-card-item item">
+              <a href="#" class="portfolio-link link">
+                <img
+                  src="./images/1-technokriak.jpg"
+                  width="100%"
+                  alt="На екрані ноутбука профайли працівників"
+                />
+                <div class="portfolio-card">
+                  <h2 class="portfolio-post poststyle">Технокряк</h2>
+                  <p class="portfolio-text textstyle">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-card-item item">
+              <a href="#" class="portfolio-link link">
+                <img
+                  src="./images/2-poster.jpg"
+                  width="100%"
+                  alt="Два баскетболісти з м'ячем"
+                />
+                <div class="portfolio-card">
+                  <h2 class="portfolio-post poststyle">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="portfolio-text textstyle">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-card-item item">
+              <a href="#" class="portfolio-link link">
+                <img
+                  src="./images/3-seafood.jpg"
+                  width="100%"
+                  alt="Логотип ресторану морепродуктів"
+                />
+                <div class="portfolio-card">
+                  <h2 class="portfolio-post poststyle">Ресторан Seafood</h2>
+                  <p class="portfolio-text textstyle">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-card-item item">
+              <a href="#" class="portfolio-link link">
+                <img
+                  src="./images/4-prime.jpg"
+                  width="100%"
+                  alt="комп'ютрні навушники"
+                />
+                <div class="portfolio-card">
+                  <h2 class="portfolio-post poststyle">Проєкт Prime</h2>
+                  <p class="portfolio-text textstyle">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-card-item item">
+              <a href="#" class="portfolio-link link">
+                <img
+                  src="./images/5-boxes.jpg"
+                  width="100%"
+                  alt="дві картонні коробочки"
+                />
+                <div class="portfolio-card">
+                  <h2 class="portfolio-post poststyle">Проєкт Boxes</h2>
+                  <p class="portfolio-text textstyle">Додаток</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-card-item item">
+              <a href="#" class="portfolio-link link">
+                <img
+                  src="./images/6-noborders.jpg"
+                  width="100%"
+                  alt="екран комп'ютера з картою та інтерактивними елементами"
+                />
+                <div class="portfolio-card">
+                  <h2 class="portfolio-post poststyle">
+                    Inspiration has no Borders
+                  </h2>
+                  <p class="portfolio-text textstyle">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-card-item item">
+              <a href="#" class="portfolio-link link">
+                <img
+                  src="./images/7-limited.jpg"
+                  width="100%"
+                  alt="розгорнутий глянцевий журнал"
+                />
+                <div class="portfolio-card">
+                  <h2 class="portfolio-post poststyle">
+                    Видання Limited Edition
+                  </h2>
+                  <p class="portfolio-text textstyle">Дизайн</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-card-item item">
+              <a href="#" class="portfolio-link link">
+                <img
+                  src="./images/8-taglab.jpg"
+                  width="100%"
+                  alt="бірка з написом ЛАБ"
+                />
+                <div class="portfolio-card">
+                  <h2 class="portfolio-post poststyle">Проєкт LAB</h2>
+                  <p class="portfolio-text textstyle">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-card-item item">
+              <a href="#" class="portfolio-link link">
+                <img
+                  src="./images/9-grow.jpg"
+                  width="100%"
+                  alt="людина друкую на клавіатурі ноутбуку"
+                />
+                <div class="portfolio-card">
+                  <h2 class="portfolio-post poststyle">Growing Business</h2>
+                  <p class="portfolio-text textstyle">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-content">
+        <div class="adress-wrapper">
+          <a href="./index.html" class="logo link" title="Cтудія"
+            ><span class="logo-web">Web</span
+            ><span class="logo-studio">Studio</span></a
+          >
+          <address class="contact">
+            <ul class="adress list">
+              <li class="item">
+                <a
+                  href="https://goo.gl/maps/tANwrw668av1KkJdA"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="link map"
+                  >м. Київ, пр-т Лесі Українки, 26</a
+                >
+              </li>
+              <li class="item">
+                <a href="mailto:info@devstudio.com" class="link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="item">
+                <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-soc-wrapper">
+          <h2 class="footer-connect title">приєднуйтесь</h2>
+          <ul class="footer-soc-list list">
+            <li class="footer-soc-item item">
+              <a href="#" class="link footer-soc-link">
+                <svg class="footer-soc-icon icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-link-item item">
+              <a href="#" class="link footer-soc-link">
+                <svg class="footer-soc-icon icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-link-item item">
+              <a href="#" class="link footer-soc-link">
+                <svg class="footer-soc-icon icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-link-item item">
+              <a href="#" class="link footer-soc-link">
+                <svg class="footer-soc-icon icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
