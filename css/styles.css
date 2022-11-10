@@ -97,6 +97,58 @@ img {
   text-decoration: none;
 }
 
+/* Модальне вікно */
+
+.modal-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 8px;
+  width: 528px;
+  height: 581px;
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.close-icon {
+  fill: #000000;
+  display: block;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: revert;
+  transform: scale(1);
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+
 /* Шапка сайту */
 .header {
   border-bottom: 1px solid #ececec;
@@ -138,10 +190,15 @@ img {
 .sitenav .link:hover,
 .sitenav .link:focus {
   color: var(--main-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .current {
   color: var(--main-color);
+}
+
+.current::after {
+  content: "";
 }
 
 .sitenav .link {
@@ -164,6 +221,7 @@ img {
 .contacts .item:focus {
   fill: var(--main-color);
   color: var(--main-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .icon-envelope {
@@ -184,6 +242,7 @@ img {
 .header-cont:hover,
 .header-cont:focus {
   color: var(--main-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 /* Футер */
@@ -235,6 +294,7 @@ img {
 .contacts .link:hover,
 .contacts .link:focus {
   color: var(--main-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 /* Секція "Hero" */
@@ -295,6 +355,7 @@ img {
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 /* Секція особливості */
@@ -357,12 +418,45 @@ img {
 
 .service-list > .item {
   /* width: max-content; */
-  width: 370px;
+  width: 100%;
   flex-basis: calc(100% / 3 - var(--item-grid-gap));
   margin-top: var(--item-grid-gap);
   margin-left: var(--item-grid-gap);
 }
 
+.service-img {
+  display: flex;
+  height: 294px;
+  justify-content: last baseline;
+  position: absolute;
+  z-index: 10;
+}
+.item-title {
+  position: relative;
+  width: 100%;
+  /* height: 100%; */
+  /* bottom: 0;
+  right: 0; */
+
+  z-index: 11;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(47, 48, 58, 0.8);
+
+}
+
+.item-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
 /* Секція наша команда */
 .our-team {
   background-color: #f5f4fa;
@@ -445,11 +539,13 @@ img {
 .soc-link:focus {
   fill: var(--button-text-color);
   background-color: var(--main-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .soc-link:hover .soc-icon,
 .soc-link:focus .soc-icon {
   fill: #ffffff;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 /* Постійні клієнти */
@@ -484,11 +580,13 @@ img {
 .client-link:hover,
 .client-link:focus {
   border: 1px solid var(--main-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .client-link:hover .client-icon,
 .client-link:focus .client-icon {
   fill: var(--main-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .client-icon {
@@ -575,6 +673,7 @@ img {
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: var(--main-color);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .footer-soc-icon {
@@ -620,6 +719,7 @@ img {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 /* Галерея портфоліо */
@@ -643,6 +743,7 @@ img {
 .portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .portfolio-post {
