@@ -151,8 +151,6 @@ img {
 
 /* Шапка сайту */
 .header {
-  
-  width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background: #FFFFFF;
@@ -162,8 +160,8 @@ img {
 .header-line {
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
+  
+  width: 1600px;
   height: 0;
   border-bottom: 1px solid #ececec;
   z-index: 22;
@@ -188,6 +186,7 @@ img {
 /* Навігація сайту */
 .header .container {
   align-items: center;
+  border-bottom: 1px solid #ececec;
 }
 
 .sitenav {
@@ -327,7 +326,7 @@ z-index: 23;
 
 /* Секція "Hero" */
 .hero {
-  width: 1600px;
+  max-width: 1600px;
   background-color: #c4c4c4;
   background-image: linear-gradient(
       to right,
@@ -439,24 +438,19 @@ z-index: 23;
 }
 
 .service-list {
-  margin-top: calc(-1 * var(--item-grid-gap));
-  margin-left: calc(-1 * var(--item-grid-gap));
   display: inline-flex;
+  gap: 30px;
 }
 
 .service-list > .item {
-  /* width: max-content; */
-  width: 100%;
-  flex-basis: calc(100% / 3 - var(--item-grid-gap));
-  margin-top: var(--item-grid-gap);
-  margin-left: var(--item-grid-gap);
+  width: 100%;  
 }
 
 .service-item {
   position: relative;
 }
 
-.item-title {
+.item-text {
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -466,7 +460,6 @@ z-index: 23;
   align-items: center;
   justify-content: center;
   background: rgba(47, 48, 58, 0.8);
-
 }
 
 .item-text {
@@ -689,12 +682,12 @@ z-index: 23;
   background-color: rgba(255, 255, 255, 0.1);
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,
 .footer-soc-link:focus {
   background-color: var(--main-color);
-  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .footer-soc-icon {
